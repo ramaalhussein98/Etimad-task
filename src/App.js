@@ -1,7 +1,7 @@
 import React from 'react'
 // import ReactDOM from 'react-dom'
 import './App.css';
-import Header from './containers/header/header';
+import Header from './layouts/header/header';
 import Financial from './components/financial/Financial';
 import Service from './components/service/Service';
 

@@ -1,3 +1,147 @@
+@font-face {
+  font-family: "next";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url("../src/assests/fonts/DINNextLTW05-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "next";
+  font-weight: 300;
+  font-style: normal;
+  src:
+    url("../src/assests/fonts/DINNextLTW23-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "next";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    url("../src/assests/fonts/DINNextLTW23-Medium.woff2") format("woff2");
+}
+
+:root {
+
+  --font-family: 'next';
+
+  --dark-green: #08594d;
+  --light-green: #38c17e;
+  --orange: #f6972f;
+  ;
+
+  direction: rtl;
+  text-align: right;
+  unicode-bidi: bidi-override;
+
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
 
 
 
+body {
+  background-color: white;
+  font-family: 'next' !important;
+  font-weight: 700;
+
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+/* style slider */
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  width: 200px !important;
+  /* transform: translate(-85px, -25px) !important; */
+  transform: translate(268px, -25px) !important;
+  ;
+  bottom: -8 !important;
+
+}
+
+.slick-list {
+  margin-right: -40px !important;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 5px;
+  width: 25px;
+  height: 4px;
+  border-radius: 4px !important;
+}
+
+
+
+.slick-dots li button {
+  height: 4px !important;
+  background: #08594d !important;
+  opacity: .2 !important;
+  width: 25px !important;
+  border-radius: 4px !important;
+  border: 0 !important;
+  padding: 0 !important;
+
+}
+
+
+
+.slick-dots li button::before {
+  opacity: 0 !important;
+}
+
+.slick-dots li.slick-active {
+  opacity: 1;
+  background: #08594d;
+  height: 5px;
+  width: 25px;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 0 !important;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .slick-dots {
+    bottom: -5rem !important;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .slick-dots {
+    transform: translate(18rem, -3rem) !important;
+  }
+
+  .slick-list {
+    margin-right: 0px !important;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .slick-dots {
+    transform: translate(10rem, -3rem) !important;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .slick-dots {
+    transform: translate(9rem, -4rem) !important;
+  }
+}
