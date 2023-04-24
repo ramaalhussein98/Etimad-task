@@ -8,6 +8,7 @@ import Gov from '../images/gov1.png'
 import Bussiness from '../images/LogoWeb_Etimad-business.svg'
 import Individuals from '../images/Etimad-individuals.svg'
 import LogoSmall from '../images/logovertical.svg'
+import BackgroudImg from '../images/splash-ar.png'
 
 
-export default { logo, splashImg, MicrosoftTeams, Etimadtender, EtimadSouq, EtimadLogo, Gov, Bussiness, Individuals, LogoSmall };
+export default { logo, splashImg, MicrosoftTeams, Etimadtender, EtimadSouq, EtimadLogo, BackgroudImg , Gov, Bussiness, Individuals, LogoSmall };
