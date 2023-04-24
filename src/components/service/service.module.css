@@ -1,0 +1,114 @@
+.Service {
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.Service__heading {
+    color: #32ad71;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: .8em;
+}
+
+
+.tablist_li {
+
+    margin-bottom: 1em;
+    box-shadow: 0 10px 20px rgba(171, 171, 171, .2);
+    max-width: 960px;
+    margin: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.tablist_li+.react-tabs__tab--selected .arrow {
+    opacity: 1;
+}
+
+.arrow {
+    color: #005b4e;
+    opacity: 0;
+}
+
+
+
+.tablist_li:hover {
+    box-shadow: 0 40px 80px rgba(171, 171, 171, .5);
+    transition: .3s ease-in-out;
+}
+
+.tablist_li:hover .arrow {
+    opacity: 1;
+}
+
+.tabs_li {
+    padding: 1.5rem 1rem !important;
+}
+
+.tabs_li img {
+    margin: 0;
+    width: 190px;
+}
+
+.TabsConten div {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 205px;
+    margin-bottom: 1.5em;
+
+}
+
+.TabsConten div img {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .TabsConten div img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Service__heading {
+        font-size: 36px;
+    }
+
+    .tablist_li {
+        width: 100%;
+    }
+
+    .tabs_li img {
+
+        width: 150px;
+    }
+}
+
+.TabsConten p {
+    font-size: 18px;
+    line-height: 2;
+    color: #08594d;
+    opacity: .7;
+    font-family: 'next';
+    font-weight: 400;
+
+}
+
+.TabsConten button {
+    font-size: 14px;
+    padding: 1.5em 3em;
+    font-weight: 400;
+    line-height: 1;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #f6972f;
+    border-color: #f6972f;
+    cursor: pointer;
+    border: 0;
+}
